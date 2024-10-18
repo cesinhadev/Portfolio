@@ -1,23 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 :root{
-    --border-color:rgba(255, 255, 255, 0.452);
+    --gray:rgba(255, 255, 255, 0.507);
     --black:rgba(196, 196, 196, 0.11);
     --white:#fff;
+    --brown:#8E5D52;
+    --dark-brown:#352728;
+    --background-main:linear-gradient(63.13deg, var(--dark-brown) 51.04%, var(--brown) 51.05%);
 }
 
-
-
 *{
-    background: var(--black);
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
     margin:0;
     padding: 0;
 }
 .header{
-    border-bottom: solid 1px transparent;
-    background: var(--black);
+    border-bottom: solid 1px var(--black);
+    background: var(--gray);
     backdrop-filter: blur(10px);
+    border-radius: 50px;
     height: 5rem;
     width: 100%;
 }
@@ -25,12 +26,12 @@
 a{
     color: var(--white);
     display: block;
-    font-size: 15.2061px;
+    font-size: 15px;
     text-decoration: none;
     transition: ease-in-out 0.3s;
 }
 a:hover {
-    color: rgb(208, 255, 0);
+    color: var(--gray);
 }
 
 ul{
@@ -66,7 +67,7 @@ ul{
 /*Inicio*/
 
 #inicio{
-    background: linear-gradient(63.13deg, #352728 51.04%, #8E5D52 51.05%);
+    background: var(--background-main);
     height: 100vh;
     display: flex;
     align-items: center;
@@ -99,7 +100,7 @@ ul{
 }
 
 .linkedin{
-    background-color: #8E5D52;
+    background-color:var(--brown);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -122,5 +123,25 @@ ul{
 .link:hover {
     letter-spacing: 4px;
     transition: .5s;
-    color: var(--white);
+    color: var(--gray);
+}
+
+.desenho{
+    width: 300px;
+    grid-area: desenho;
+}
+
+@keyframes desenhoAnimacao{
+    from{
+        top: -15px;
+    }
+    to{
+        top: 15px;
+    }
+}
+
+.desenho2{
+    right: 2rem;
+    position: relative;
+    animation: desenhoAnimacao 2.1s infinite alternate-reverse linear;
 }
