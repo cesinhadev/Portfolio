@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+:root{
+    --gray:rgba(255, 255, 255, 0.507);
+    --black:rgba(196, 196, 196, 0.11);
+    --white:#fff;
+    --brown:#8E5D52;
+    --dark-brown:#352728;
+    --background_linear-gradient:linear-gradient(63.13deg, var(--dark-brown) 51.04%, var(--brown) 51.05%);
+}
+
+*{
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    margin:0;
+    padding: 0;
+}
+.header{
+    border-bottom: solid 1px var(--black);
+    background: var(--gray);
+    backdrop-filter: blur(10px);
+    border-radius: 50px;
+    height: 5rem;
+    width: 100%;
+}
+
+a{
+    color: var(--white);
+    display: block;
+    font-size: 15px;
+    text-decoration: none;
+    transition: ease-in-out 0.3s;
+}
+a:hover {
+    color: var(--gray);
+}
+
+ul{
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    height: 4rem;
+    justify-content: space-around;
+    list-style: none;
+    width: 100%;
+}
+.barra {
+    background: var(--black);
+    backdrop-filter: blur(20px);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.barra-conteiner {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.centralizador {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/*Inicio*/
+
+#inicio{
+    background: var(--background_linear-gradient);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.altura-ajuste{
+    width: 100%;
+}
+
+.ajustador {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.apresentacao {
+    max-width: 741px;
+    color:var(--white);
+}
+
+.descricao{
+    font-size: 25px;
+    grid-area: descricao;
+}
+
+.nome{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.linkedin{
+    background-color:var(--brown);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 60px;
+}
+
+.linkedin a{
+    width: 100%;
+    padding: 10px 0;
+}
+
+.link{
+    font-size: 20px;
+    width: 50%;
+    text-align: center;
+    padding: 12px 0;
+    transition: ease-in-out .3s;
+}
+
+.link:hover {
+    letter-spacing: 4px;
+    transition: .5s;
+    color: var(--gray);
+}
+
+.desenho{
+    width: 300px;
+    grid-area: desenho;
+    scrollbar-width: none;
+}
+
+.desenho2{
+    width: 25rem;
+    box-shadow: 2px 3px 7px 1px  var(--dark-brown);
+    border-radius: 1rem;
+    position: relative;
+    animation: desenhoAnimacao 2.1s infinite alternate-reverse linear;
+}
+
+@keyframes desenhoAnimacao{
+    from{
+        top: -15px;
+    }
+    to{
+        top: 15px;
+    }
+}
+

@@ -1,0 +1,82 @@
+:root{
+    --brown: #493737;
+    
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+#about{
+    width:100%;
+    background: var(--brown);
+}
+
+
+.ajustar{
+    display: flex;
+    flex-wrap: wrap;
+    gap:67px;
+    margin: auto 0;
+    max-width: 1064px;
+    padding: 144px 0;
+}
+
+h2{
+    font-family: 'Montserrat', sans-serif;;
+    font-size: 55px;
+    font-weight: bold;
+    color: var(--white);
+}
+
+.avatar {
+    width: 323px;
+    height: 368px;
+    position: relative;
+    cursor: pointer;
+    transition: ease 1s;
+}
+
+.avatar:hover {
+    transform: scale(1.05);
+}
+
+
+.css, .html, .js{
+    position: absolute;
+}
+
+.html {
+    bottom: 0;
+    left: 0;
+    animation: html 3s infinite linear alternate-reverse ;
+}
+
+.js {
+    bottom: 0;
+    left: 150px;
+}
+
+.css {
+    bottom: 0;
+    left: 300px;
+    animation: css 3s infinite linear alternate-reverse;
+}
+
+
+.about_me{
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about_me p{
+    font-size: 20px;
+    text-indent: 20px;
+    max-width: 600px;
+    color: var(--white);
+}
