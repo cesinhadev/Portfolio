@@ -26,30 +26,16 @@
 }
 
 h2{
+    text-align: start;
+    padding-bottom: 5px;
     font-family: 'Montserrat', sans-serif;;
     font-size: 55px;
     font-weight: bold;
     color: var(--white);
 }
 
-.avatar {
-    width: 323px;
-    height: 368px;
-    position: relative;
-    cursor: pointer;
-    transition: ease 1s;
-}
 
-.avatar:hover {
-    transform: scale(1.05);
-}
-
-
-.css, .html, .js{
-    position: absolute;
-}
-
-.html {
+.node {
     bottom: 0;
     left: 0;
     animation: html 3s infinite linear alternate-reverse ;
@@ -60,7 +46,7 @@ h2{
     left: 150px;
 }
 
-.css {
+.sql {
     bottom: 0;
     left: 300px;
     animation: css 3s infinite linear alternate-reverse;
@@ -79,4 +65,25 @@ h2{
     text-indent: 20px;
     max-width: 600px;
     color: var(--white);
+}
+
+@keyframes node {
+    0% {
+        bottom: 0;
+        left: 250px;
+    }
+    100% {
+        bottom: 0;
+        left: 50px;
+    }
+}
+@keyframes sql {
+    0% {
+        bottom: 0;
+        left: 50px;
+    }
+    100% {
+        bottom: 0;
+        left: 250px;
+    }
 }
