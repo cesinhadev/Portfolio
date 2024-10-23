@@ -21,35 +21,41 @@
     flex-wrap: wrap;
     gap:67px;
     margin: auto 0;
-    max-width: 1064px;
+    width: 100%;
     padding: 144px 0;
 }
 
 h2{
-    text-align: start;
-    padding-bottom: 5px;
-    font-family: 'Montserrat', sans-serif;;
-    font-size: 55px;
+    text-align: center;
+    margin: 3.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
     font-weight: bold;
     color: var(--white);
 }
 
-
-.node {
-    bottom: 0;
-    left: 0;
-    animation: html 3s infinite linear alternate-reverse ;
+.circulo-conteiner{
+    border: 1px solid var(--brown);
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem;
+    padding: 1rem;
+    
 }
 
-.js {
-    bottom: 0;
-    left: 150px;
+.avatar {
+    width: 30rem;
+    height: 30rem;
+    margin-left: 2rem;
+    padding: 2rem;
+    position: relative;
+    cursor: pointer;
+    transition: ease 1s;
 }
 
-.sql {
-    bottom: 0;
-    left: 300px;
-    animation: css 3s infinite linear alternate-reverse;
+.avatar:hover {
+    transform: scale(1.05);
 }
 
 
@@ -58,6 +64,8 @@ h2{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    box-shadow: 4px 5px 10px 2px  var(--dark-brown);
+    border-radius: 1rem;
 }
 
 .about_me p{
@@ -65,25 +73,4 @@ h2{
     text-indent: 20px;
     max-width: 600px;
     color: var(--white);
-}
-
-@keyframes node {
-    0% {
-        bottom: 0;
-        left: 250px;
-    }
-    100% {
-        bottom: 0;
-        left: 50px;
-    }
-}
-@keyframes sql {
-    0% {
-        bottom: 0;
-        left: 50px;
-    }
-    100% {
-        bottom: 0;
-        left: 250px;
-    }
 }
