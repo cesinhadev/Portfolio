@@ -1,0 +1,83 @@
+:root{
+    --light-brown:#705656;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: var(--brown);
+}
+
+
+#project{
+    background-color: var(--dark-brown);
+}
+.project{
+    padding-top: 93px;
+    border: 1px solid yellow;
+}
+
+.title{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    padding: 5rem;
+    border: 1px solid yellow;
+}
+
+button {
+    padding: 10px 100px;
+    border-radius: 25px;
+    cursor: pointer;
+    color: var(--white);
+    background-color: var(--brown);
+    border: none;
+    transition: ease-in-out 0.3s;
+}
+
+.projetos-itens {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 29.5px;
+    width: 100%;
+    justify-content: center;
+}
+
+.pro div {
+    background-color: var(--light-brown);
+    width: 1000px;
+    text-align: center;
+    padding: 5% 0;
+    transform: rotate(-50deg);
+}
+
+.escondido {
+    opacity: 0;
+    display: none;
+    transition: 1000ms;
+}
+
+.pro {
+    background-color: var(--gray);
+    height: 195px;
+    width: 310px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    overflow: hidden;
+    transition: ease-in-out .5s;
+}
+
+.pro div p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    color: var(--gray);
+}
+
+.pro:hover {
+    letter-spacing: 5px;
+}
