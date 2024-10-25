@@ -7,7 +7,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background: var(--brown);
 }
 
 
@@ -17,6 +16,7 @@
 .project{
     padding-top: 93px;
     border: 1px solid yellow;
+
 }
 
 .title{
@@ -37,7 +37,7 @@ button {
     transition: ease-in-out 0.3s;
 }
 
-.projetos-itens {
+.project-itens {
     display: flex;
     flex-wrap: wrap;
     gap: 29.5px;
@@ -46,7 +46,7 @@ button {
 }
 
 .pro div {
-    background-color: var(--light-brown);
+    background-color: var(--brown);
     width: 1000px;
     text-align: center;
     padding: 5% 0;
@@ -80,4 +80,15 @@ button {
 
 .pro:hover {
     letter-spacing: 5px;
+}
+
+.github-link {
+    margin: 0 auto;
+    padding-top: 35px;
+    padding-bottom: 93px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
 }

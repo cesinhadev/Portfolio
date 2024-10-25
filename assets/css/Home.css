@@ -67,7 +67,7 @@ ul{
 /*Inicio*/
 
 #inicio{
-    background: var(--background_linear-gradient);
+    background:linear-gradient(63.13deg, var(--dark-brown) 51.04%, var(--brown) 51.05%);
     width: 100%;
     height: 100vh;
     display: flex;
