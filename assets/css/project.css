@@ -45,7 +45,7 @@ button {
     justify-content: center;
 }
 
-.pro div {
+.itens div {
     background-color: var(--brown);
     width: 1000px;
     text-align: center;
@@ -59,7 +59,7 @@ button {
     transition: 1000ms;
 }
 
-.pro {
+.itens {
     background-color: var(--gray);
     height: 195px;
     width: 310px;
@@ -72,13 +72,13 @@ button {
     transition: ease-in-out .5s;
 }
 
-.pro div p {
+.itens div p {
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
     color: var(--gray);
 }
 
-.pro:hover {
+.itens:hover {
     letter-spacing: 5px;
 }
 
