@@ -1,0 +1,60 @@
+#ability{
+    background: var(--brown);
+}
+
+.ability-pd{
+    padding-top: 93px;
+}
+
+.ability-pd h2{
+    text-align: center;
+    padding-bottom: 50rem;
+}
+
+.ability-description{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: start;
+    padding-bottom: 70px;
+}
+
+.container-ability{
+    display: flex;
+    justify-content: center;
+    gap: 37px;
+    max-width: 55%;
+    flex-wrap: wrap;
+}
+
+.ability-box{
+    align-items: center;
+    background: var(--gray);
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 1px solid red;
+    border-radius: 20px;
+    cursor: pointer;
+    display: flex;
+    height: 106px;
+    justify-content: center;
+    transition: ease .3s;
+    width: 106px;
+}
+
+.ability-box:hover{
+    background: var(--white);
+    transform: scale(1.05);
+}
+
+.container-description{
+    color: var(--white);
+    font-size: 20px;
+    max-width: 20%;
+}
+.icon-ability{
+    border: 1px solid blue;
+    transition: ease-in-out .3s;
+}
+
+
