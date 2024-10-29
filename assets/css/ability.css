@@ -1,5 +1,6 @@
 #ability{
     background: var(--brown);
+    height: 75rem;
 }
 
 .ability-pd{
@@ -8,7 +9,8 @@
 
 .ability-pd h2{
     text-align: center;
-    padding-bottom: 50rem;
+    border: 1px solid red;
+    padding: 10rem;
 }
 
 .ability-description{
@@ -32,7 +34,6 @@
     background: var(--gray);
     background-position: center;
     background-repeat: no-repeat;
-    border: 1px solid red;
     border-radius: 20px;
     cursor: pointer;
     display: flex;
@@ -40,6 +41,7 @@
     justify-content: center;
     transition: ease .3s;
     width: 106px;
+    margin-left: 50px;
 }
 
 .ability-box:hover{
@@ -53,7 +55,6 @@
     max-width: 20%;
 }
 .icon-ability{
-    border: 1px solid blue;
     transition: ease-in-out .3s;
 }
 
