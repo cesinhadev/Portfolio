@@ -15,7 +15,9 @@
 }
 .project{
     padding-top: 93px;
-    border: 1px solid yellow;
+    border: 1px solid var(--brown);
+    background: var(--light-brown);
+    
 
 }
 
@@ -24,7 +26,6 @@
     display: flex;
     justify-content: center;
     padding: 5rem;
-    border: 1px solid yellow;
 }
 
 button {
