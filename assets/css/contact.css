@@ -18,7 +18,7 @@
     flex-direction: column;
     margin: 1rem;
     padding-left: 1rem;
-    max-width: 30rem;
+    max-width: 80rem;
     justify-content: space-between;
 }
 
@@ -32,4 +32,11 @@
     border: 1px solid purple;
     width: 7rem;
     margin-bottom: 1rem;
+}
+.icon-github, 
+.icon-whatsapp, 
+.icon-linkedin{
+    display: flex;
+    justify-content: center;
+    
 }
