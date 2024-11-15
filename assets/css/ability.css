@@ -30,12 +30,12 @@
 }
 
 .ability-box{
+    border: 1px solid black;
     align-items: center;
     background: var(--gray);
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 20px;
-    cursor: pointer;
     display: flex;
     height: 106px;
     justify-content: center;
@@ -50,9 +50,14 @@
 }
 
 .container-description{
-    color: var(--white);
-    font-size: 20px;
-    max-width: 20%;
+    border: 2px solid purple;
+    background: var(--gray);
+    box-shadow: 2px 3px 7px 1px  var(--dark-brown);
+    border-radius: 1rem;
+    width: 100rem;
+    height: 28rem;
+    margin-right: 2rem;
+    margin-left: 3rem;
 }
 .icon-ability{
     transition: ease-in-out .3s;
